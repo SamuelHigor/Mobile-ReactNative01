@@ -1,11 +1,5 @@
 import React, {Component, useState} from 'react';
-import {
-  View,
-  Text,
-  ScrollView,
-  Pressable,
-  Button,
-} from 'react-native';
+import {View, Text, ScrollView, Pressable, Button} from 'react-native';
 
 import styles from './styles';
 
@@ -84,7 +78,7 @@ function taskList(props) {
                   </Pressable>
                   {/*  */}
                   <Pressable
-                  disabled={e.finished ? true : false}
+                    disabled={e.finished ? true : false}
                     onPress={() => {
                       service
                         .patch('/' + e.id)
@@ -94,8 +88,15 @@ function taskList(props) {
                         })
                         .catch(er => alert('Erro ao alterar status :('));
                     }}
-                    style={[styles.btn, e.finished ? styles.success_disabled : styles.success ]}>
-                    <Text style={[styles.btn_text, e.finished ? styles.success_disabled : styles.success ]}>
+                    style={[
+                      styles.btn,
+                      e.finished ? styles.success_disabled : styles.success,
+                    ]}>
+                    <Text
+                      style={[
+                        styles.btn_text,
+                        e.finished ? styles.success_disabled : styles.success,
+                      ]}>
                       Mudar Status
                     </Text>
                   </Pressable>
