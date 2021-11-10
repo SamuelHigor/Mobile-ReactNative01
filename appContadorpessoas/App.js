@@ -80,7 +80,6 @@ const styles = StyleSheet.create({
     marginTop: 40,
     fontWeight: 'bold',
   },
-
 })
  
 export default App;

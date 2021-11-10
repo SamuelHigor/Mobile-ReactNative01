@@ -14,6 +14,7 @@ class App extends Component{
     this.calcular = this.calcular.bind(this);
   }
  
+  
   calcular(){
     if ( (this.state.n1 === '') || (this.state.n2 === '') ){
       alert('Digite os dois valores!')
@@ -22,6 +23,7 @@ class App extends Component{
     var r = this.state.n1 * this.state.n2
     this.setState({resultado: 'Resultado: ' + r});
   }
+
  
   render(){
     return(
@@ -48,6 +50,7 @@ class App extends Component{
     );
   }
 }
+
  
 const styles = StyleSheet.create({
   container:{

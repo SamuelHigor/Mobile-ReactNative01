@@ -13,8 +13,6 @@ class App extends Component{
     this.calcular = this.calcular.bind(this);
    }
 
-    
-   
   calcular(){
    
     if ( (this.state.alcool === '') || (this.state.gasolina === '') ){
@@ -29,8 +27,6 @@ class App extends Component{
 
   }
         
-
-
   render(){
     
     return(
@@ -69,8 +65,6 @@ class App extends Component{
   }
 }
  
-
-
 
 const styles = StyleSheet.create({
   container:{

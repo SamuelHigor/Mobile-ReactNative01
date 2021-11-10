@@ -13,8 +13,6 @@ class App extends Component{
     
     this.calcular = this.calcular.bind(this);
    }
-
-    
    
   calcular(){
    
@@ -33,8 +31,6 @@ class App extends Component{
 
   }
         
-
-
   render(){
     
     return(
@@ -72,8 +68,6 @@ class App extends Component{
   }
 }
  
-
-
 
 const styles = StyleSheet.create({
   container:{

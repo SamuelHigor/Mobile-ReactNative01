@@ -18,7 +18,6 @@ class App extends Component{
   }
         
 
-
   render(){
     
     return(
@@ -36,13 +35,11 @@ class App extends Component{
     <Button title="Calcular" onPress={this.gerar}/>
 
 
-
       </View>
     );
   }
 }
  
-
 
 
 const styles = StyleSheet.create({
@@ -86,8 +83,6 @@ const styles = StyleSheet.create({
   fontWeight: "bold",
   marginVertical: 100,
 }
-
-
 
 })
  
